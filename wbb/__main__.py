@@ -66,7 +66,7 @@ async def start_bot():
             bot_modules += "|{:<15}".format(i)
         j += 1
     print("+===============================================================+")
-    print("|                              WBB                              |")
+    print("|                              Zyruz                            |")
     print("+===============+===============+===============+===============+")
     print(bot_modules)
     print("+===============+===============+===============+===============+")
@@ -99,25 +99,25 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Commands ❓", callback_data="bot_commands"
+                text="CMD", callback_data="bot_commands"
             ),
             InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/thehamkercat/WilliamButcherBot",
+                text="DEV",
+                url="https://t.me/tubots",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="System Stats 🖥",
+                text="T & C",
                 callback_data="stats_callback",
             ),
             InlineKeyboardButton(
-                text="Support 👨", url="http://t.me/WBBSupport"
+                text="Support", url="http://t.me/unitedbotsupport"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="Add Me To Your Group 🎉",
+                text="Add Me ",
                 url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
@@ -138,21 +138,21 @@ async def help_command(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Help ❓",
+                        text="Help ",
                         url=f"t.me/{BOT_USERNAME}?start=help",
                     ),
                     InlineKeyboardButton(
-                        text="Repo 🛠",
-                        url="https://github.com/thehamkercat/WilliamButcherBot",
+                        text="Devs",
+                        url="https://t.me/tubots",
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        text="System Stats 💻",
+                        text="T & C",
                         callback_data="stats_callback",
                     ),
                     InlineKeyboardButton(
-                        text="Support 👨", url="t.me/WBBSupport"
+                        text="Support", url="t.me/tubots"
                     ),
                 ],
             ]
@@ -174,7 +174,7 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name}, My name is {bot_name}.
+        """Hello {first_name} {id}  My name is {bot_name}.
 I'm a group management bot with some useful features.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
