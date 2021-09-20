@@ -99,7 +99,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="CMD", callback_data="bot_commands"
+                text="Commands", callback_data="bot_commands"
             ),
             InlineKeyboardButton(
                 text="DEV",
@@ -125,7 +125,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
 )
 
 home_text_pm = (
-    f"Hey there! My name is {BOT_NAME}. I can manage your "
+    f"Hey there! {FIRST} My name is {BOT_NAME} . I can manage your "
     + "group with lots of useful features, feel free to "
     + "add me to your group."
 )
@@ -174,7 +174,7 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name} {id}  My name is {bot_name}.
+        """Hello {first_name}  My name is {bot_name}.
 I'm a group management bot with some useful features.
 You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.
