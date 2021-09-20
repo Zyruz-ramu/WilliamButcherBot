@@ -176,7 +176,7 @@ async def pmpermit_cq(_, cq):
         async for m in app2.iter_history(user_id, limit=6):
             if m.reply_markup:
                 await m.delete()
-        await app2.send_message(user_id, "Blocked, Go scam someone else.")
+        await app2.send_message(user_id, "Blocked, Go scam someone else JOIN : @ramuxd")
         await app2.block_user(user_id)
         await cq.answer()
 
