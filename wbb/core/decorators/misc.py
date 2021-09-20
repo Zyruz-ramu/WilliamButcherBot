@@ -34,7 +34,7 @@ def exec_time(func):
         finally:
             t2 = time()
             total = t2 - t1
-            total = round(total, 2)
+            total = round(total, 3)
             print(f"{func.__name__} Took: {total} Seconds")
 
     return _time_it
