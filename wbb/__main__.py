@@ -99,7 +99,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Commands", callback_data="bot_commands"
+                text="Command", callback_data="bot_commands"
             ),
             InlineKeyboardButton(
                 text="DEV",
@@ -125,7 +125,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
 )
 
 home_text_pm = (
-    f"Hey there! {FIRST} My name is {BOT_NAME} . I can manage your "
+    f"Hey there! My name is {BOT_NAME} . I can manage your "
     + "group with lots of useful features, feel free to "
     + "add me to your group."
 )
@@ -139,7 +139,7 @@ async def help_command(_, message):
                 [
                     InlineKeyboardButton(
                         text="Help ",
-                        url=f"t.me/{BOT_USERNAME}?start=help",
+                        url=f"t.me/zyruz_Robot?start=help",
                     ),
                     InlineKeyboardButton(
                         text="Devs",
