@@ -124,7 +124,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
     ]
 )
 
-home_text_pm = (
+home_text_pm = (REPLY_STICKER = "CAACAgUAAxkBAAIfqWFJ-XD3T5CMCDUr7ZzHEkFBCLtjAALbAgACJ4U4VnhewY13gokwHgQ" )
     f"Hey there! My name is Aleena. I can manage your "
     + "group with lots of useful features, feel free to "
     + "add me to your group." 
