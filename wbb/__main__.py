@@ -117,6 +117,15 @@ home_keyboard_pm = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
+                text="MOVIE", url="https://t.me/trollcompanymovies
+                
+            ),
+            InlineKeyboardButton(
+                text="chat", url="http://t.me/kerelachatv2"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
                 text="Add Me ",
                 url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
             )
