@@ -118,6 +118,10 @@ home_keyboard_pm = InlineKeyboardMarkup(
             InlineKeyboardButton(
                 text="Support", url="http://t.me/unitedbotsupport"
             ),
+            InlineKeyboardButton(
+              text="MOVIES",
+              url="https://t.me/trollcompanymovies",
+            ),
         ],
         [
             InlineKeyboardButton(
