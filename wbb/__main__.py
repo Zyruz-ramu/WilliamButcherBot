@@ -105,6 +105,10 @@ home_keyboard_pm = InlineKeyboardMarkup(
                 text="DEV",
                 url="https://t.me/tubots",
             ),
+            InlineKeyboardButton(
+              text="GBAN LOG",
+              url="https://t.me/aleena_botlog",
+            ),
         ],
         [
             InlineKeyboardButton(
