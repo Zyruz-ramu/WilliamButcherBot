@@ -124,12 +124,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
     ]
 )
 
-home_text_pm = 
-@Client.on_message(other_filters2)
-async def start(_, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAIfqWFJ-XD3T5CMCDUr7ZzHEkFBCLtjAALbAgACJ4U4VnhewY13gokwHgQ")
-    await message.reply_text(
-     
+home_text_pm =   
   f"Hey there! My name is {BOT_NAME}. I can manage your "
   + "group with lots of useful features, feel free to "
   + "add me to your group."
