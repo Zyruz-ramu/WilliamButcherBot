@@ -142,8 +142,8 @@ async def help_command(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Help ",
-                        url=f"t.me/zyruz_Robot?start=help",
+                        text="REPO",
+                        url=f"t.me/ramuxd",
                     ),
                     InlineKeyboardButton(
                         text="Devs",
